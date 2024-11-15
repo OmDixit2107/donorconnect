@@ -15,7 +15,7 @@ class BloodBankService {
       final data = jsonDecode(response.body);
       return data['records']; // Modify as per the API response structure
     } else {
-      throw Exception('Failed to load blood banks');
+      return [];
     }
   }
 }

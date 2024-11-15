@@ -12,7 +12,7 @@ class ThemeCubit extends Cubit<Themestate> {
   }
 
   void toggle(bool isDark) {
-    final themeData = isDark ? _dark : _light;
+    final themeData = isDark ? _light : _dark;
     emit(Themestate(themeData));
     _savetheme(isDark);  // Save selected theme
   }

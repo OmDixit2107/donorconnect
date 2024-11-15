@@ -41,7 +41,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         actions: [
           IconButton(
             onPressed: () {
-              context.read<AuthCubit>().signOut(context);
+              
             },
             icon: const Icon(
               Icons.logout,
@@ -60,7 +60,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   Column(
                     children: [
                       Text(
-                        widget.name,
+                        "ALICE",
                         style: const TextStyle(
                           fontSize: 24,
                           fontWeight: FontWeight.bold,
@@ -186,7 +186,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     },
                   ),
 
-                  const SizedBox(height: 24),
+                  // const SizedBox(height: 24),
                   // Save Button
                   ElevatedButton(
                     style: ElevatedButton.styleFrom(

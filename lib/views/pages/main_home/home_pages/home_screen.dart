@@ -90,24 +90,25 @@ class _HomeScreenState extends State<HomeScreen> {
                   Icons.search,
                   size: 23,
                 ),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    PageRouteBuilder(
-                      pageBuilder: (context, animation, secondaryAnimation) =>
-                          const LocateBloodBanks(),
-                      transitionsBuilder:
-                          (context, animation, secondaryAnimation, child) {
-                        return FadeTransition(
-                          opacity: animation,
-                          child: child,
-                        );
-                      },
-                      transitionDuration: const Duration(
-                          milliseconds: 900), // Adjust duration as needed
-                    ),
-                  );
-                },
+                onPressed: (){},
+                // onPressed: () {
+                //   Navigator.push(
+                //     context,
+                //     PageRouteBuilder(
+                //       pageBuilder: (context, animation, secondaryAnimation) =>
+                //           const LocateBloodBanks(),
+                //       transitionsBuilder:
+                //           (context, animation, secondaryAnimation, child) {
+                //         return FadeTransition(
+                //           opacity: animation,
+                //           child: child,
+                //         );
+                //       },
+                //       transitionDuration: const Duration(
+                //           milliseconds: 900), // Adjust duration as needed
+                //     ),
+                //   );
+                // },
               ),
               HomeCard(
                 title: _text.learn_about_donating,
